@@ -27,14 +27,7 @@ public class CalculatorTest {
 
 
         // Add check
-        String normalText = "";
-        try {
-            normalText = driver.findElement(By.name("desc")).getAttribute("value");
-        } catch (Exception e) {
-            e.printStackTrace();
-            driver.quit();
-        }
-
+        String normalText = driver.findElement(By.name("desc")).getAttribute("value");
         driver.quit();
         Assert.assertEquals(normalText, "Your category is Normal");
     }
@@ -58,13 +51,7 @@ public class CalculatorTest {
         driver.findElement(By.cssSelector("[value=Calculate]")).click();
 
         // Add check
-        String starvationText = "";
-        try {
-            starvationText = driver.findElement(By.name("desc")).getAttribute("value");
-        } catch (Exception e) {
-            e.printStackTrace();
-            driver.quit();
-        }
+        String starvationText = driver.findElement(By.name("desc")).getAttribute("value");
         driver.quit();
         Assert.assertEquals(starvationText, "Your category is Starvation");
     }
@@ -88,13 +75,7 @@ public class CalculatorTest {
         driver.findElement(By.cssSelector("[value=Calculate]")).click();
 
         // Add check
-        String underweightText = "";
-        try {
-            underweightText = driver.findElement(By.name("desc")).getAttribute("value");
-        } catch (Exception e) {
-            e.printStackTrace();
-            driver.quit();
-        }
+        String underweightText = driver.findElement(By.name("desc")).getAttribute("value");
         driver.quit();
         Assert.assertEquals(underweightText, "Your category is Underweight");
     }
@@ -118,13 +99,7 @@ public class CalculatorTest {
         driver.findElement(By.cssSelector("[value=Calculate]")).click();
 
         // Add check
-        String overweightText = "";
-        try {
-            overweightText = driver.findElement(By.name("desc")).getAttribute("value");
-        } catch (Exception e) {
-            e.printStackTrace();
-            driver.quit();
-        }
+        String overweightText = driver.findElement(By.name("desc")).getAttribute("value");
         driver.quit();
         Assert.assertEquals(overweightText, "Your category is Overweight");
     }
@@ -148,13 +123,7 @@ public class CalculatorTest {
         driver.findElement(By.cssSelector("[value=Calculate]")).click();
 
         // Add check
-        String obeseText = "";
-        try {
-            obeseText = driver.findElement(By.name("desc")).getAttribute("value");
-        } catch (Exception e) {
-            e.printStackTrace();
-            driver.quit();
-        }
+        String obeseText = driver.findElement(By.name("desc")).getAttribute("value");
         driver.quit();
         Assert.assertEquals(obeseText, "Your category is Obese");
     }
