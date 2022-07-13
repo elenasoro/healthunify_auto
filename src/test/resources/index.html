@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome page</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <h1 id="welcome_title" name="welcome_title">Welcome, Stranger!</h1>
+    <div id="intro_container" name="intro_container">
+        <p id="intro_text" name="intro_text">My name is Elena</p>
+    </div>
+    <h2 id="invite_message" name="invite_message">Please, see y table: </h2>
+    <table id="countries_table" name="countries_table" class="styled-table">
+        <tr>
+            <th>Country</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Belarus</td>
+            <td>Minsk</td>
+        </tr>
+        <tr>
+            <td>Spain</td>
+            <td>Madrid</td>
+        </tr>
+    </table>
+
+    <form id="select_form" name="select_form">
+        <select>
+            <option disabled selected>I Like this band: </option>
+            <option id="beatles_option" name="beatles_option">The Beatles</option>
+            <option id="rolling_option" name="rolling_option">The Rolling Stones</option>
+            <option id="queen_option" name="queen_option">Queen</option>
+        </select>
+    </form>
+    <br>
+    <br>
+
+    <form id="hand_form" name="hand_form">
+        <input type="checkbox" id="right_hand" name="right_hand" value="Right Hand">
+        <label for="right_hand">I use right hand</label><br>
+        <input type="checkbox" id="left_hand" name="left_hand" value="Left Hand">
+        <label for="left_hand">I use left hand</label><br>
+    </form>
+
+    <br>
+    <br>
+
+    <a href="https://www.w3schools.com" id="w3link" name="w3link">Visit W3Schools.com!</a>
+    <br>
+    <br>
+
+    <button type="button" onclick="showMessage()" class="button" id="click_button" name="click_button">Click Me!</button>
+    <br>
+    <br>
+
+    <img src="panda.jpeg" alt="Oops, you found it" width="500" height="300" id="panda_img" name="panda_img">
+
+</body>
+</html>
